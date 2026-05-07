@@ -25,39 +25,42 @@ export default function About() {
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="flex flex-col max-w-4xl mx-auto gap-12 mb-20">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="text-center"
           >
-            <h3 className="text-2xl font-bold text-white mb-6">Get to know me</h3>
-            <div className="space-y-4 text-slate-400 text-lg">
+            <h3 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 mb-6">
+              Get to know me
+            </h3>
+            <div className="space-y-5 text-slate-300 text-lg leading-relaxed text-left md:text-center">
               <p>
-                I am an Information Technology student with a strong passion for web development and software engineering. My journey in tech started with a curiosity about how things work on the internet, and it has evolved into a career path that I am deeply committed to.
+                I am an Information Technology student driven by a deep passion for web development and software engineering. What began as a simple curiosity about the digital world has evolved into a dedicated career path.
               </p>
               <p>
-                Currently, I am honing my skills in modern frontend and backend technologies, aiming to become a versatile Full-Stack Developer. I enjoy tackling complex challenges and building applications that are not just functional, but also provide a seamless user experience.
+                Currently, I am expanding my expertise in modern frontend and backend technologies, striving to become a highly versatile <span className="text-indigo-400 font-semibold">Full-Stack Developer</span>. I thrive on solving complex challenges and engineering applications that are not only robust but also deliver seamless, intuitive user experiences.
               </p>
               <p>
-                My ultimate goal is to leverage technology to solve real-world problems and contribute to innovative projects in the tech industry, specifically in web development and cybersecurity.
+                My ultimate vision is to leverage technology to solve real-world problems, specifically focusing on building innovative web solutions and exploring the ever-evolving landscape of cybersecurity.
               </p>
             </div>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8"
           >
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.name}
-                whileHover={{ y: -5 }}
-                className="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/50 transition-colors"
+                whileHover={{ y: -5, scale: 1.02 }}
+                className="group bg-slate-900/40 backdrop-blur-sm border border-slate-800/80 p-6 rounded-2xl hover:border-indigo-500/50 hover:bg-slate-800/60 transition-all duration-300 shadow-lg hover:shadow-indigo-500/10 flex flex-col items-center text-center"
               >
                 {skill.icon}
                 <h4 className="text-xl font-semibold text-white mb-2">{skill.name}</h4>

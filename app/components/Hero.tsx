@@ -103,7 +103,7 @@ export default function Hero() {
               {/* Image Container */}
               <div className="relative w-full h-full rounded-full border-2 border-slate-800 bg-slate-900 p-2 overflow-hidden flex items-center justify-center">
                  <Image 
-                   src="/profile.jpg" 
+                   src="/profile-pic.jpg" 
                    alt="John Rey Maños Profile" 
                    fill
                    className="object-cover rounded-full p-2"
