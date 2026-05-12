@@ -56,7 +56,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-1">Location</h4>
-                <p className="text-slate-400">Davao City, Philippines</p>
+                <p className="text-slate-400">Pioneer Drive Bajada, Davao city, Philippines</p>
               </div>
             </div>
           </motion.div>

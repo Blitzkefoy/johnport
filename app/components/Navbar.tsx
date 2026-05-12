@@ -58,7 +58,7 @@ export default function Navbar() {
             </motion.a>
           ))}
           <motion.a
-            href="/Resume.pdf"
+            href="/MaÑos.pdf"
             target="_blank"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="/Resume.pdf"
+                href="/MaÑos.pdf"
                 target="_blank"
                 className="px-6 py-3 text-sm font-medium text-white bg-indigo-600 rounded-full shadow-[0_0_15px_rgba(79,70,229,0.3)]"
               >
